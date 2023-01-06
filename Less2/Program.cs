@@ -1,2 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World or Nilahim!");
+﻿int numbA = 33;
+int numbB = 74;
+int result = numbA + numbB;
+Console.WriteLine(result);
