@@ -1,15 +1,15 @@
 ﻿// Напишите программу вычисления функции Аккермана с помощью рекурсии. Даны два неотрицательных числа m и n.
 
-Console.WriteLine("Введите два положительных числа: M и N.");
-int m = InputInt("Введите M: ");
-int n = InputInt("Введите N: ");
-Console.WriteLine($"A({m}, {n}) = {Akkerman(m, n)}");
 
 int InputInt(string output)
 {
     Console.Write(output);
     return int.Parse(Console.ReadLine());
 }
+
+Console.WriteLine("Введите два положительных числа: M и N.");
+int m = InputInt("Введите M: ");
+int n = InputInt("Введите N: ");
 
 int Akkerman(int m, int n)
 {
@@ -20,3 +20,4 @@ int Akkerman(int m, int n)
     else
         return Akkerman(m - 1, Akkerman(m, n - 1));
 }
+Console.WriteLine($"A({m}, {n}) = {Akkerman(m, n)}");
